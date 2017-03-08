@@ -47,3 +47,21 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+function share(expr){
+    switch (expr) {
+      case "Twitter":
+        window.plugins.socialsharing.shareViaTwitter('Message and link via Twitter', null /* img */, 'http://www.phonegapspain.com');
+            closeOptions();
+        break;
+      case "Facebook":
+        window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
+            closeOptions();
+        break;
+      case "WhatsApp":
+            window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){console.log(errormsg)});
+            closeOptions();
+        break;
+      default:
+        console.log("");
+    }
+}

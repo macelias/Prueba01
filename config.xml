@@ -15,7 +15,7 @@
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     
-    <plugin name="nl.x-services.plugins.socialsharing" spec="4.3.8" source="pgb" />
+    <!--<plugin name="nl.x-services.plugins.socialsharing" spec="4.3.8" source="pgb" />-->
   	<plugin name="cordova-plugin-battery-status" />
     <plugin name="cordova-plugin-camera" />
     <plugin name="cordova-plugin-media-capture" />
